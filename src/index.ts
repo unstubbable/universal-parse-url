@@ -11,12 +11,10 @@ export interface URL {
   search: string | undefined;
 }
 
-const doc = typeof document === 'undefined' ? null : document;
-
 let a: HTMLAnchorElement;
 let parse: (urlString: string) => NodeURL;
-if (doc) {
-  a = doc.createElement('a');
+if (typeof document !== 'undefined') {
+  a = document.createElement('a');
 } else {
   parse = require('url').parse;
 }
@@ -24,7 +22,7 @@ if (doc) {
 export function parseURL(urlString: string): URL {
   let parsed: HTMLAnchorElement | NodeURL;
 
-  if (doc) {
+  if (typeof document !== 'undefined') {
     a.href = urlString;
     parsed = a;
   } else {

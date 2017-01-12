@@ -2,7 +2,10 @@
   "name": "universal-parse-url",
   "version": "0.1.0",
   "description": "A universal URL parser for Node.js and browser environments.",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "browser": {
+    "index.js": "browser.js"
+  },
   "scripts": {
     "compile": "tsc -p .",
     "pretest": "npm run compile",
@@ -10,7 +13,9 @@
     "test:karma": "karma start karma.conf.js --single-run",
     "prerelease": "git checkout master; git pull origin master; npm t",
     "release": "standard-version",
-    "prepublish": "npm run compile"
+    "split": "rollup -c > index.js && BROWSER=true rollup -c > browser.js",
+    "copy-typings": "cp dist/index.d.ts .",
+    "prepublish": "npm run compile && npm run split && npm run copy-typings"
   },
   "repository": {
     "type": "git",
@@ -44,16 +49,21 @@
     "karma-phantomjs-launcher": "1.0.2",
     "karma-typescript": "2.1.6",
     "mocha": "3.2.0",
+    "rollup": "0.41.1",
+    "rollup-plugin-replace": "1.1.1",
     "standard-version": "4.0.0",
     "ts-config": "0.6.0",
     "tslint": "4.3.1",
     "typescript": "2.1.5"
   },
   "files": [
-    "dist",
+    "browser.js",
+    "index.js",
+    "index.d.ts",
     "LICENSE",
     "README.md"
   ],
+  "types": "index.d.ts",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
