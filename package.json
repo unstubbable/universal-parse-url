@@ -7,7 +7,10 @@
     "compile": "tsc -p .",
     "pretest": "npm run compile",
     "test": "mocha dist/index.spec.js",
-    "test:karma": "karma start karma.conf.js --single-run"
+    "test:karma": "karma start karma.conf.js --single-run",
+    "prerelease": "git checkout master; git pull origin master; npm t",
+    "release": "standard-version",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -41,6 +44,7 @@
     "karma-phantomjs-launcher": "1.0.2",
     "karma-typescript": "2.1.6",
     "mocha": "3.2.0",
+    "standard-version": "4.0.0",
     "ts-config": "0.6.0",
     "tslint": "4.3.1",
     "typescript": "2.1.5"
