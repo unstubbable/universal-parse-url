@@ -4,7 +4,7 @@
   "description": "A universal URL parser for Node.js and browser environments.",
   "main": "index.js",
   "browser": {
-    "index.js": "browser.js"
+    "./index.js": "./browser.js"
   },
   "scripts": {
     "compile": "tsc -p .",
