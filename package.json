@@ -1,0 +1,54 @@
+{
+  "name": "universal-parse-url",
+  "version": "0.0.0",
+  "description": "A universal URL parser for Node.js and browser environments.",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingHenne/universal-parse-url.git"
+  },
+  "keywords": [
+    "url",
+    "parse",
+    "parseurl",
+    "nodejs",
+    "universal",
+    "browser",
+    "isomorphic"
+  ],
+  "author": "Hendrik Liebau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KingHenne/universal-parse-url/issues"
+  },
+  "homepage": "https://github.com/KingHenne/universal-parse-url#readme",
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.37",
+    "@types/node": "7.0.0",
+    "chai": "3.5.0",
+    "cz-conventional-changelog": "1.2.0",
+    "karma": "1.3.0",
+    "karma-chai": "0.1.0",
+    "karma-mocha": "1.3.0",
+    "karma-typescript": "2.1.6",
+    "mocha": "3.2.0",
+    "ts-config": "0.6.0",
+    "tslint": "4.3.1",
+    "typescript": "2.1.5"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
