@@ -5,3 +5,4 @@ index.js
 index.d.ts
 browser.js
 .envrc
+npm-debug.log

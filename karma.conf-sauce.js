@@ -11,18 +11,6 @@ const customLaunchers = {
     browserName: 'Firefox',
     version: 'latest'
   },
-  sl_ie_11: {
-    base: 'SauceLabs',
-    browserName: 'Internet Explorer',
-    platform: 'Windows 8.1',
-    version: '11'
-  },
-  sl_ie_10: {
-    base: 'SauceLabs',
-    browserName: 'Internet Explorer',
-    platform: 'Windows 7',
-    version: '10'
-  },
   sl_ie_9: {
     base: 'SauceLabs',
     browserName: 'Internet Explorer',
@@ -46,10 +34,13 @@ const customLaunchers = {
 module.exports = function (config) {
   karmaCommon(config);
   config.set({
+    concurrency: 5,
     sauceLabs: {
       testName: 'universal-parse-url',
-      recordScreenshots: false
+      startConnect: !process.env.TRAVIS,
+      tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
     },
+    captureTimeout: 120000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
     reporters: ['mocha', 'saucelabs']
