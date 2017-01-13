@@ -53,6 +53,7 @@ module.exports = function (config) {
         tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
       }
     },
+    captureTimeout: 120000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
     reporters: ['mocha', 'saucelabs']
