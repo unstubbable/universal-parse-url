@@ -9,7 +9,7 @@
 
 A universal URL parser for Node.js and browser environments with a minimal footprint.
 
-## How to install
+## Installation
 
 Install with `npm`:
 
@@ -17,7 +17,7 @@ Install with `npm`:
 npm install --save universal-parse-url
 ```
 
-**Note:** The package also includes a `d.ts` file, and thus works out of the box with TypeScript.
+**Note:** The installed node module also includes a `d.ts` file, and thus works out of the box with **TypeScript**.
 
 ## Usage
 

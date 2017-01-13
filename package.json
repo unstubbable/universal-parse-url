@@ -1,7 +1,7 @@
 {
   "name": "universal-parse-url",
   "version": "1.0.0",
-  "description": "A universal URL parser for Node.js and browser environments.",
+  "description": "A universal URL parser for Node.js and browser environments with a minimal footprint.",
   "main": "index.js",
   "browser": {
     "./index.js": "./browser.js"
@@ -29,9 +29,10 @@
     "parse",
     "parseurl",
     "nodejs",
-    "universal",
     "browser",
-    "isomorphic"
+    "universal",
+    "isomorphic",
+    "typescript"
   ],
   "author": "Hendrik Liebau",
   "license": "MIT",
