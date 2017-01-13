@@ -3,6 +3,8 @@
 [![commitizen][commitizen-image]][commitizen-url]
 [![license][license-image]][license-url]
 
+[![Build Status][saucelabs-image]][saucelabs-url]
+
 A universal URL parser for Node.js and browser environments with a minimal footprint.
 
 ## How to install
@@ -58,6 +60,9 @@ To keep `universal-parse-url` as small and simple as possible, only the URL deta
 
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [commitizen-url]: http://commitizen.github.io/cz-cli/
+
+[saucelabs-image]: https://saucelabs.com/browser-matrix/KingHenne.svg
+[saucelabs-url]: https://saucelabs.com/beta/builds/637246a9c2504aa0bb61b1c493c23ab1
 
 [URL.parse]: https://nodejs.org/dist/latest-v6.x/docs/api/url.html#url_url_parse_urlstring_parsequerystring_slashesdenotehost
 [HTMLAnchorElement]: https://developer.mozilla.org/de/docs/Web/API/HTMLAnchorElement
