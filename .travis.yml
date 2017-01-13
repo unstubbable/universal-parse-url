@@ -1,4 +1,9 @@
 language: node_js
 node_js:
-  - "6"
-script: npm run test:node
+- '6'
+script: npm run test:ci
+addons:
+  sauce_connect:
+    username: "KingHenne"
+  jwt:
+    secure: "a1Hz1/fzVWT0EX0UdGdZ+svwJ54i+/+EkXALpvd/VjWM74i+uo9AcozNSwSX0rSNDMCe/5g4Q1snWR2WpF0p4EvBTxCEiN0cqCwWQr6pN0kwyLT8F3iQ0zRK4AGTJ6K0end10SvLcDy2ESZezprUde7isDujiIa+y89i6RAsxBxxo16G65gZM28BfufqC0DGr1bK/BxIxvmGrmQoa0P+pisSJxU1QrAf8WR8gyewsJWjlmj97NkWRB9dIJqv3FeIhpB1iuXPAV0FuAJAaqeyfG4cRA5tW+lYJd+vhepK243Ci/zcSZTgdgGtu4zSYtlCMRWzI/kjMhUqJXMOvdxxNiXLgQKSgGh4tO75xOmZ/AGV2PAmEQCmW3YdmaTi63eocaSIgoTeTw+JdZHt2DujF9AZHhHyPhQF9Lwvj5cuUJVZVyFzOiHk1XYjKrqpGKyq1fsDICNPBQXCi5KdXYZjqy5OQfXFfqLE5WzH6YgFnpn4AhJS8eInbH8EJMNXT5OBs2BirnrMuYn3luTdDnynzS/wBOYmMTWh4qu8+GPLanaLT1d4AhImzYxemFLF8LZqcsM2Bh1TNRTelmhrFBKE5wnhvgG/6RPeJwa23x6XH8l3CE6sit/F/1Xbfxh6XiXel78hpHEgcbL6IiOirii+LGWzkY7iRIPbNA+EFMLEJ6g="

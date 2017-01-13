@@ -12,6 +12,7 @@
     "test:node": "mocha dist/index.spec.js",
     "test:karma": "karma start",
     "test:karma:sauce": "karma start karma.conf-sauce.js",
+    "test:ci": "npm run test:node && npm run test:karma:sauce",
     "test": "npm run test:node && npm run test:karma",
     "prerelease": "git checkout master; git pull origin master; npm t",
     "release": "standard-version",
