@@ -30,8 +30,17 @@ function removeImplicitPort(url: URL): URL {
   return url;
 }
 
-function prependSlash(path: string): string {
-  return path.indexOf('/') === 0 ? path : `/${path}`;
+// A pathname should always start with a slash.
+// Internet Explorer does not add a leading slash, so we have to prepend it.
+function prependSlashToPathname(url: URL): URL {
+  if (url.pathname.indexOf('/') < 0) {
+    url.pathname = `/${url.pathname}`;
+  }
+  return url;
+}
+
+function fixBrowserInconsistencies(url: URL): URL {
+  return removeImplicitPort(prependSlashToPathname(url));
 }
 
 export function parseURL(urlString: string): URL {
@@ -44,14 +53,20 @@ export function parseURL(urlString: string): URL {
     parsed = parse(urlString) as NodeURL;
   }
 
-  return removeImplicitPort({
+  const url = {
     hash: parsed.hash || '',
     host: parsed.host || '',
     hostname: parsed.hostname || '',
     href: parsed.href || '',
-    pathname: prependSlash(parsed.pathname || ''),
+    pathname: parsed.pathname || '',
     port: parsed.port || '',
     protocol: parsed.protocol || '',
     search: parsed.search || ''
-  });
+  };
+
+  if (typeof document !== 'undefined') {
+    return fixBrowserInconsistencies(url);
+  } else {
+    return url;
+  }
 }
