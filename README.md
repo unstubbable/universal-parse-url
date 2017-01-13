@@ -1,5 +1,6 @@
 # universal-parse-url
 
+[![NPM][npm-image]][npm-url]
 [![Travis Build Status][travis-image]][travis-url]
 [![Commitizen Friendly][commitizen-image]][commitizen-url]
 [![MIT License][license-image]][license-url]
@@ -55,6 +56,9 @@ If you plan on targeting browser environments as well, you need to use a bundler
 ## Caveats
 
 To keep `universal-parse-url` as small and simple as possible, only the URL details that are available in Node’s `URL` object as well as `HTMLAnchorElement` are supported (see the above example).
+
+[npm-image]: https://img.shields.io/npm/v/universal-parse-url.svg
+[npm-url]: https://www.npmjs.com/package/universal-parse-url
 
 [travis-image]: https://img.shields.io/travis/KingHenne/universal-parse-url.svg
 [travis-url]: https://travis-ci.org/KingHenne/universal-parse-url
