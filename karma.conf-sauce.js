@@ -11,18 +11,6 @@ const customLaunchers = {
     browserName: 'Firefox',
     version: 'latest'
   },
-  sl_ie_11: {
-    base: 'SauceLabs',
-    browserName: 'Internet Explorer',
-    platform: 'Windows 8.1',
-    version: '11'
-  },
-  sl_ie_10: {
-    base: 'SauceLabs',
-    browserName: 'Internet Explorer',
-    platform: 'Windows 7',
-    version: '10'
-  },
   sl_ie_9: {
     base: 'SauceLabs',
     browserName: 'Internet Explorer',
