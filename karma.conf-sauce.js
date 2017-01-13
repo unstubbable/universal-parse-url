@@ -11,12 +11,6 @@ const customLaunchers = {
     browserName: 'Firefox',
     version: 'latest'
   },
-  sl_firefox_old: {
-    base: 'SauceLabs',
-    browserName: 'Firefox',
-    platform: 'Linux',
-    version: '24.0'
-  },
   sl_ie_11: {
     base: 'SauceLabs',
     browserName: 'Internet Explorer',
@@ -47,11 +41,11 @@ const customLaunchers = {
     platform: 'macOS 10.12',
     version: 'latest'
   },
-  sl_safari_6: {
+  sl_safari_9: {
     base: 'SauceLabs',
     browserName: 'Safari',
-    platform: 'OS X 10.8',
-    version: '6.0'
+    platform: 'OS X 10.11',
+    version: '9.0'
   }
 }
 
