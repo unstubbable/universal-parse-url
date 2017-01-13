@@ -34,6 +34,7 @@ const customLaunchers = {
 module.exports = function (config) {
   karmaCommon(config);
   config.set({
+    concurrency: 5,
     sauceLabs: {
       testName: 'universal-parse-url',
       startConnect: !process.env.TRAVIS,
