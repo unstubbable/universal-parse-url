@@ -48,7 +48,10 @@ module.exports = function (config) {
   config.set({
     sauceLabs: {
       testName: 'universal-parse-url',
-      recordScreenshots: false
+      startConnect: !process.env.TRAVIS,
+      connectOptions: {
+        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
+      }
     },
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
