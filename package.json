@@ -1,6 +1,6 @@
 {
   "name": "universal-parse-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A universal URL parser for Node.js and browser environments with a minimal footprint.",
   "main": "index.js",
   "browser": {

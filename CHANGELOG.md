@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/KingHenne/universal-parse-url/compare/v1.0.0...v1.0.1) (2017-01-13)
+
+
+### Bug Fixes
+
+* do not try to fix browser inconsistencies in node.js ([#7](https://github.com/KingHenne/universal-parse-url/issues/7)) ([2566e12](https://github.com/KingHenne/universal-parse-url/commit/2566e12))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/KingHenne/universal-parse-url/compare/v0.1.2...v1.0.0) (2017-01-13)
 
