@@ -67,6 +67,6 @@ module.exports = function (config) {
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
-    reporters: ['mocha', 'saucelabs']
+    reporters: ['mocha', 'karma-typescript', 'saucelabs']
   });
 };
