@@ -22,7 +22,7 @@ npm install --save universal-parse-url
 ## Usage
 
 ```js
-import { parseURL } from 'universal-parse-url'
+import { parseURL } from 'universal-parse-url';
 const url = parseURL('http://www.example.com:1234/foo?bar=1#baz');
 ```
 
