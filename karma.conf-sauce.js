@@ -38,9 +38,7 @@ module.exports = function (config) {
     sauceLabs: {
       testName: 'universal-parse-url',
       startConnect: !process.env.TRAVIS,
-      connectOptions: {
-        tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
-      }
+      tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
     },
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
