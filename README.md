@@ -1,9 +1,10 @@
 # universal-parse-url
 
-[![commitizen][commitizen-image]][commitizen-url]
-[![license][license-image]][license-url]
+[![Travis Build Status][travis-image]][travis-url]
+[![Commitizen Friendly][commitizen-image]][commitizen-url]
+[![MIT License][license-image]][license-url]
 
-[![Build Status][saucelabs-image]][saucelabs-url]
+[![Sauce Labs Build Status][saucelabs-image]][saucelabs-url]
 
 A universal URL parser for Node.js and browser environments with a minimal footprint.
 
@@ -54,6 +55,9 @@ If you plan on targeting browser environments as well, you need to use a bundler
 ## Caveats
 
 To keep `universal-parse-url` as small and simple as possible, only the URL details that are available in Node’s `URL` object as well as `HTMLAnchorElement` are supported (see the above example).
+
+[travis-image]: https://img.shields.io/travis/KingHenne/universal-parse-url.svg
+[travis-url]: https://travis-ci.org/KingHenne/universal-parse-url
 
 [license-image]: https://img.shields.io/github/license/kinghenne/universal-parse-url.svg
 [license-url]: https://github.com/KingHenne/universal-parse-url/blob/master/LICENSE
