@@ -45,7 +45,7 @@
     "@types/mocha": "2.2.39",
     "@types/node": "7.0.4",
     "chai": "3.5.0",
-    "cz-conventional-changelog": "1.2.0",
+    "cz-conventional-changelog": "2.0.0",
     "karma": "1.4.1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.0.0",
