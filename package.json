@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/KingHenne/universal-parse-url#readme",
   "devDependencies": {
-    "@types/chai": "3.4.34",
+    "@types/chai": "3.5.0",
     "@types/mocha": "2.2.39",
     "@types/node": "7.0.4",
     "chai": "3.5.0",
