@@ -60,7 +60,7 @@
     "standard-version": "4.0.0",
     "ts-config": "0.6.0",
     "tslint": "4.3.1",
-    "typescript": "2.1.6"
+    "typescript": "2.3.1"
   },
   "files": [
     "browser.js",
