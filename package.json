@@ -43,7 +43,7 @@
   "devDependencies": {
     "@types/chai": "3.4.34",
     "@types/mocha": "2.2.39",
-    "@types/node": "7.0.4",
+    "@types/node": "7.0.19",
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.2.0",
     "karma": "1.4.1",
