@@ -55,7 +55,7 @@
     "karma-sauce-launcher": "1.1.0",
     "karma-typescript": "2.1.7",
     "mocha": "3.2.0",
-    "rollup": "0.41.4",
+    "rollup": "0.45.1",
     "rollup-plugin-replace": "1.1.1",
     "standard-version": "4.0.0",
     "ts-config": "0.6.0",
