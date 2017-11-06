@@ -7,7 +7,7 @@
 
 [![Sauce Labs Build Status][saucelabs-image]][saucelabs-url]
 
-A universal URL parser for Node.js and browser environments with a minimal footprint.
+A universal URL parser for Node.js and browser environments with a minimal footprint (gzipped **only 600 bytes** for the browser version).
 
 ## Installation
 
