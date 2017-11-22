@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/KingHenne/universal-parse-url/compare/v1.0.1...v1.0.2) (2017-11-22)
+
+
+### Bug Fixes
+
+* prepend slash to pathname when it does not start with a slash ([#35](https://github.com/KingHenne/universal-parse-url/issues/35)) ([f31b81e](https://github.com/KingHenne/universal-parse-url/commit/f31b81e))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/KingHenne/universal-parse-url/compare/v1.0.0...v1.0.1) (2017-01-13)
 
