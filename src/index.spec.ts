@@ -2,17 +2,17 @@ import { assert } from 'chai';
 import { parseURL } from './';
 
 describe('parseURL', () => {
-  it('returns an URL object for http://www.example.com:1234/foo?bar=1#baz', () => {
-    const urlString = 'http://www.example.com:1234/foo?bar=1#baz';
+  it('returns an URL object for http://www.example.com:1234/foo/bar?baz=1#qux', () => {
+    const urlString = 'http://www.example.com:1234/foo/bar?baz=1#qux';
     const expectedResult = {
-      hash: '#baz',
+      hash: '#qux',
       host: 'www.example.com:1234',
       hostname: 'www.example.com',
-      href: 'http://www.example.com:1234/foo?bar=1#baz',
-      pathname: '/foo',
+      href: 'http://www.example.com:1234/foo/bar?baz=1#qux',
+      pathname: '/foo/bar',
       port: '1234',
       protocol: 'http:',
-      search: '?bar=1'
+      search: '?baz=1'
     };
     assert.deepEqual(parseURL(urlString), expectedResult);
   });
