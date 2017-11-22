@@ -33,7 +33,7 @@ function removeImplicitPort(url: URL): URL {
 // A pathname should always start with a slash.
 // Internet Explorer does not add a leading slash, so we have to prepend it.
 function prependSlashToPathname(url: URL): URL {
-  if (url.pathname.indexOf('/') < 0) {
+  if (url.pathname.charAt(0) !== '/') {
     url.pathname = `/${url.pathname}`;
   }
   return url;
@@ -70,3 +70,5 @@ export function parseURL(urlString: string): URL {
     return url;
   }
 }
+
+export { prependSlashToPathname, fixBrowserInconsistencies };
