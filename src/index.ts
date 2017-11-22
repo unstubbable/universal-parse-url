@@ -70,3 +70,5 @@ export function parseURL(urlString: string): URL {
     return url;
   }
 }
+
+export { prependSlashToPathname, fixBrowserInconsistencies };
